@@ -83,15 +83,9 @@ public class GUI extends JFrame {
         String nameLevel = (String) cb_level.getSelectedItem();
         assert nameLevel != null;
         switch (nameLevel) {
-            case "Level 1":
-                numberLevel = 0;
-                break;
-            case "Level 2":
-                numberLevel = 1;
-                break;
-            case "Level 3":
-                numberLevel = 2;
-                break;
+            case "Level 1" -> numberLevel = 0;
+            case "Level 2" -> numberLevel = 1;
+            case "Level 3" -> numberLevel = 2;
         }
         return numberLevel;
     }
